@@ -952,7 +952,7 @@ lydxml_subtree_any(struct lyd_xml_ctx *lydctx, const struct lysc_node *snode, co
         LY_CHECK_ERR_GOTO(r, rc = r, cleanup);
 
         /* update options so that generic data can be parsed */
-        lydctx->parse_opts &= ~LYD_PARSE_STRICT;
+        //lydctx->parse_opts &= ~LYD_PARSE_STRICT;
         lydctx->parse_opts |= LYD_PARSE_OPAQ | (ext ? LYD_PARSE_ONLY : 0);
         lydctx->int_opts |= LYD_INTOPT_ANY | LYD_INTOPT_WITH_SIBLINGS;
 
